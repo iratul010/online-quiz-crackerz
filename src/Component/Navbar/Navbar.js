@@ -10,8 +10,8 @@ const Navbar = () => {
     { id: 3, name: "Blog", path: "/blog" },
   ];
   return (
-    <div className="md:flex justify-between md:p-4  bg-green-400 text-white ">
-      <div className="md:text-3xl text-2xl md:ml-40  italic md:font-bold ">Online-Quiz-Game</div>
+    <div className="md:flex justify-between items-center  bg-green-400 text-white ">
+      <div className="md:text-2xl  text-2xl md:ml-40  italic md:font-bold ">Online-Quiz-Game</div>
       <div>
         <div onClick={() => setOpen(!open)} className="h-6 w-6 md:hidden">
           {open ? <XMarkIcon></XMarkIcon> : <Bars3Icon></Bars3Icon>}

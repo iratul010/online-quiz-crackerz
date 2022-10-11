@@ -3,7 +3,7 @@ import BannerImage from "../../Images/react-img.png";
 const Header = () => {
   return (
     <div className=" ">
-      <div className="md:flex items-center justify-around rounded bg-slate-50 container mx-auto mt-10">
+      <div className="md:flex items-center justify-around rounded bg-slate-50 container mx-auto mt-10 border">
         <div className="m-12 ">
           <img src={BannerImage} alt="react-icon" />
         </div>
