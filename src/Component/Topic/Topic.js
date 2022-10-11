@@ -12,7 +12,7 @@ const Topic = (topic) => {
       <div className="flex justify-between bg-white  items-center p-5 md:p-3 text-green-500 ">
         <h2>{name}</h2>
         <p>{total}</p>
-        <Link to="">
+        <Link to={`/quiz/${id}`}>
           <button className="btn   bg-green-400 ">
             <span>Start Practice</span>{" "}
           </button>
