@@ -7,6 +7,7 @@ import Topics from "./Component/Topics/Topics";
 import Main from "./Layout/Main";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Four04Page from "./Component/Four04Page/Four04Page";
 function App() {
   const router = createBrowserRouter([
     {
@@ -40,6 +41,11 @@ function App() {
           element: <Quiz></Quiz>,
         },
       ],
+    },
+
+    {
+      path: "*",
+      element: <Four04Page></Four04Page>,
     },
   ]);
   return (
