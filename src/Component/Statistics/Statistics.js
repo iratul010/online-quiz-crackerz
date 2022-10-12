@@ -12,10 +12,10 @@ const Statistics = () => {
         <h2>React,Javascript,CSS & Git Total Question Recharts</h2>
       </div>
 
-      <div>
+      <div className="container mx-auto w-[300px]">
         <LineChart
           width={300}
-          className="md:w-[600px]"
+          className="md:w-[600px] "
           height={300}
           data={userData}
           margin={{ top: 5, right: 20, bottom: 5, left: 0 }}

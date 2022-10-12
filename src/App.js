@@ -5,9 +5,10 @@ import Quiz from "./Component/Quiz/Quiz";
 import Statistics from "./Component/Statistics/Statistics";
 import Topics from "./Component/Topics/Topics";
 import Main from "./Layout/Main";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Four04Page from "./Component/Four04Page/Four04Page";
+
 function App() {
   const router = createBrowserRouter([
     {

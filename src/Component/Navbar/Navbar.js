@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
+import "./Navbar.css";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import NavLinks from "../NavLinks/NavLinks";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const routes = [
@@ -10,8 +11,10 @@ const Navbar = () => {
     { id: 3, name: "Blog", path: "/blog" },
   ];
   return (
-    <div className="md:flex justify-between items-center sticky  bg-green-400 text-white ">
-      <div className="md:text-2xl  text-2xl md:ml-40  italic md:font-bold ">Online-Quiz-Game</div>
+    <div className="md:flex justify-between items-center sticky top-0 z-10 bg-green-400 text-white ">
+      <div className="md:text-2xl  text-2xl md:ml-40  italic md:font-bold ">
+        <p className="quiz-game">Quiz-Game</p>
+      </div>
       <div>
         <div onClick={() => setOpen(!open)} className="h-6 w-6 md:hidden">
           {open ? <XMarkIcon></XMarkIcon> : <Bars3Icon></Bars3Icon>}
